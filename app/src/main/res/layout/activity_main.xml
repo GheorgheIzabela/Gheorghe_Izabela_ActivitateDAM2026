@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IGG - InventarGeneralGradina"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnAdauga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adauga planta" />
+
+    <Button
+        android:id="@+id/btnAdaugaAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adauga planta - AI" />
+
+    <TextView
+        android:id="@+id/textRezultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nu exista planta adaugata."
+        android:textSize="18sp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

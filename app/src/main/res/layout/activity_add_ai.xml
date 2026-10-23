@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7F0"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Titlul aplicatiei -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IGG | INVENTAR GENERAL GRADINA"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+        <!-- Titlul formularului -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inregistrare gradina"
+            android:textColor="#1B4332"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="18dp" />
+
+        <!-- Descriere -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completeaza informatiile gradinii tale."
+            android:textColor="#657A68"
+            android:textSize="14sp"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Scule -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scule disponibile"
+            android:textStyle="bold"
+            android:textColor="#1B4332" />
+
+        <EditText
+            android:id="@+id/aiScule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: lopata, grebla, foarfeca"
+            android:inputType="textCapSentences"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Insecte -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insecte prezente"
+            android:textStyle="bold"
+            android:textColor="#1B4332" />
+
+        <EditText
+            android:id="@+id/aiInsecte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: albine, furnici, fluturi"
+            android:inputType="textCapSentences"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Plante -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plante cultivate"
+            android:textStyle="bold"
+            android:textColor="#1B4332" />
+
+        <EditText
+            android:id="@+id/aiPlante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: trandafiri, lalele, rosii"
+            android:inputType="textCapSentences"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Suprafata -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suprafata gradinii (mp)"
+            android:textStyle="bold"
+            android:textColor="#1B4332" />
+
+        <EditText
+            android:id="@+id/aiSuprafata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 150"
+            android:inputType="number"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Vreme ploioasa -->
+        <Switch
+            android:id="@+id/aiVremePloaie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vreme ploioasa"
+            android:textColor="#1B4332"
+            android:textSize="16sp"
+            android:checked="false"
+            android:thumbTint="#4CAF50"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buton salvare -->
+        <Button
+            android:id="@+id/aiSalveaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SALVEAZA GRADINA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E7D32"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
