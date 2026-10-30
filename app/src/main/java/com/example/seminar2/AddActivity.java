@@ -16,7 +16,7 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        // Legam elementele din XML cu Java
+
         EditText scule = findViewById(R.id.editScule);
         EditText insecte = findViewById(R.id.editInsecte);
         EditText plante = findViewById(R.id.editPlante);
@@ -25,16 +25,16 @@ public class AddActivity extends AppCompatActivity {
         Switch vremePloaie = findViewById(R.id.switchVremePloaie);
         Button salveaza = findViewById(R.id.btnSalveaza);
 
-        // Ce se intampla cand apasam butonul Salveaza
+
         salveaza.setOnClickListener(v -> {
 
-            // Citim datele introduse
+
             String s = scule.getText().toString().trim();
             String i = insecte.getText().toString().trim();
             String p = plante.getText().toString().trim();
             String textSuprafata = suprafata.getText().toString().trim();
 
-            // Verificam campurile obligatorii
+
             if (s.isEmpty() || i.isEmpty() ||
                     p.isEmpty() || textSuprafata.isEmpty()) {
 
@@ -44,7 +44,7 @@ public class AddActivity extends AppCompatActivity {
                 return;
             }
 
-            // Transformam suprafata din String in int
+
             int suprafataGradina;
 
             try {
@@ -54,16 +54,16 @@ public class AddActivity extends AppCompatActivity {
                 return;
             }
 
-            // Verificam daca suprafata este pozitiva
+
             if (suprafataGradina <= 0) {
                 suprafata.setError("Introdu o suprafata mai mare ca 0");
                 return;
             }
 
-            // Citim valoarea Switch-ului
+
             boolean ploua = vremePloaie.isChecked();
 
-            // Cream obiectul gradina
+
             InventarGeneralGradina gradina =
                     new InventarGeneralGradina(
                             s,
@@ -73,11 +73,11 @@ public class AddActivity extends AppCompatActivity {
                             ploua
                     );
 
-            // Punem obiectul intr-un Bundle
+
             Bundle date = new Bundle();
             date.putSerializable("gradina", gradina);
 
-            // Trimitem rezultatul catre MainActivity
+
             Intent intent = new Intent();
             intent.putExtra("date", date);
 

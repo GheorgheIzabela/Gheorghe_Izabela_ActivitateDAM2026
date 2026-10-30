@@ -10,9 +10,12 @@ public class InventarGeneralGradina implements Serializable {
     int suprafata;
     boolean vreme_ploaie;
 
-    public InventarGeneralGradina(String scule, String insecte,
-                                  String plante, int suprafata,
-                                  boolean vreme_ploaie) {
+    public InventarGeneralGradina(
+            String scule,
+            String insecte,
+            String plante,
+            int suprafata,
+            boolean vreme_ploaie) {
 
         this.scule = scule;
         this.insecte = insecte;
@@ -25,7 +28,12 @@ public class InventarGeneralGradina implements Serializable {
         return "Scule: " + scule +
                 "\nInsecte: " + insecte +
                 "\nPlante: " + plante +
-                "\nSuprafata: " + suprafata + " mp" +
-                "\nVreme ploioasa: " + (vreme_ploaie ? "Da" : "Nu");
+                "\nSuprafață: " + suprafata + " mp" +
+                "\nVreme ploioasă: " + (vreme_ploaie ? "Da" : "Nu");
+    }
+
+    @Override
+    public String toString() {
+        return afisare();
     }
 }

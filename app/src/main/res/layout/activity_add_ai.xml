@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- Titlul aplicatiei -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:textSize="15sp"
             android:gravity="center" />
 
-        <!-- Titlul formularului -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:textSize="28sp"
             android:layout_marginTop="18dp" />
 
-        <!-- Descriere -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:textSize="14sp"
             android:layout_marginBottom="25dp" />
 
-        <!-- Scule -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Buton salvare -->
+
         <Button
             android:id="@+id/aiSalveaza"
             android:layout_width="match_parent"

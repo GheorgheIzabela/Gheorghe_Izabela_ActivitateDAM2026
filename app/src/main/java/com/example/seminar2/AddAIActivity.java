@@ -29,7 +29,7 @@ public class AddAIActivity extends AppCompatActivity {
         Switch vremePloaie = findViewById(R.id.aiVremePloaie);
         Button salveaza = findViewById(R.id.aiSalveaza);
 
-        // Verificam daca elementele exista in XML
+
         if (scule == null || insecte == null ||
                 plante == null || suprafata == null ||
                 vremePloaie == null || salveaza == null) {
